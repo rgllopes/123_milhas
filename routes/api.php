@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\FlightController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('users', [UserController::class, 'index']);
+Route::get('flights', [FlightController::class, 'index']);

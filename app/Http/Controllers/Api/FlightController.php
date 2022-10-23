@@ -6,23 +6,23 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 /**
-* @OA\Info(title="API Usuarios", version="1.0")
+* @OA\Info(title="API 123 Milhas", version="1.0")
 *
 * @OA\Server(url="http://127.0.0.1:8000")
 */
-class UserController extends Controller
+class FlightController extends Controller
 {
     /**
     * @OA\Get(
-    *     path="/api/users",
-    *     summary="Mostrar usuarios",
+    *     path="/api/flights",
+    *     summary="Mostrar vôos",
     *     @OA\Response(
     *         response=200,
-    *         description="Mostrar todos los usuarios."
+    *         description="Mostrar todos os vôos."
     *     ),
     *     @OA\Response(
     *         response="default",
-    *         description="Ha ocurrido un error."
+    *         description="Ocorreu um erro."
     *     )
     * )
     */

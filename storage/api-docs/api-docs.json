@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "API Usuarios",
+        "title": "API 123 Milhas",
         "version": "1.0"
     },
     "servers": [
@@ -10,16 +10,16 @@
         }
     ],
     "paths": {
-        "/api/users": {
+        "/api/flights": {
             "get": {
-                "summary": "Mostrar usuarios",
-                "operationId": "566aed8efb436ca506e0ef51a032ecd9",
+                "summary": "Mostrar vôos",
+                "operationId": "3254b18ad6bc488e245dd7ee65b65613",
                 "responses": {
                     "200": {
-                        "description": "Mostrar todos los usuarios."
+                        "description": "Mostrar todos os vôos."
                     },
                     "default": {
-                        "description": "Ha ocurrido un error."
+                        "description": "Ocorreu um erro."
                     }
                 }
             }
