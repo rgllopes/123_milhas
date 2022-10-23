@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Request;
 
 /**
@@ -28,12 +29,10 @@ class FlightController extends Controller
     */
     public function index()
     {
-        $array = [
-            "id"=> 1,
-            "cia"=> "LATAM",
-            "fare"=> "4DA",
-    ];
-        return $array;
-        //return User::all();
+        //External API consumption 123_Milhas
+        $theUrl     = config('app.guzzle_url').'/api/flights/';
+        $flights   = Http ::get($theUrl);
+
+        return $flights;
     }
 }
